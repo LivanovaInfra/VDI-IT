@@ -1,11 +1,12 @@
-﻿
-#Write-host "Changing to install mode"
-#Change user /install
+﻿#Changing to install mode.
+Change user /install
 
-Write-host "Installing 7zip" 
-start-process -FilePath "$destination\7z2301-x64.exe" -ArgumentList “/S" -Wait
+#Declare installation source.
+$Source-7Zip = 'https://github.com/LivanovaInfra/VDI-IT/blob/main/7z2301-x64.exe'
 
+#Install 7zip.
+start-process -FilePath "$Source-7Zip" -ArgumentList “/S" -Wait
 
 #Write-host "Changing to execute mode"
-#Change user /execute
+Change user /execute
 
