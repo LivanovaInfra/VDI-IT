@@ -17,8 +17,8 @@ Invoke-WebRequest -uri ($SourceURL + $7Zip) -OutFile ($dest + $7Zip)
 
 #Install 7zip.
 Write-host "Installing 7zip."
-start-process -FilePath ($dest + $7Zip) -ArgumentList “/S" -Wait
+start-process -FilePath ($dest + $7Zip) -ArgumentList "/S" -Wait
 
-#Write-host "Changing to execute mode"
+#Changing to execute mode.
 Write-host "Changing usermode to execute."
 Change user /execute
