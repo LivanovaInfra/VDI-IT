@@ -1,6 +1,6 @@
 #Changing to install mode.
-Write-host "Changing user mode to install."
-Change user /install
+#Write-host "Changing user mode to install."
+#Change user /install
 
 #Declare installation source.
 $SourceURL = 'https://raw.githubusercontent.com/LivanovaInfra/VDI-IT/main/'
@@ -20,5 +20,5 @@ Write-host "Installing 7zip."
 start-process -FilePath ($dest + $7Zip) -ArgumentList "/S" -Wait
 
 #Changing to execute mode.
-Write-host "Changing usermode to execute."
-Change user /execute
+#Write-host "Changing usermode to execute."
+#Change user /execute
